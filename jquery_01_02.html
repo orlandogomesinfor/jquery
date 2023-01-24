@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Atividade 01</title>
+    </head>
+    <body>
+        <div>
+            <label>Valor 1 </label>
+            <input type="text" id="v1" value="0"/>
+            <br/><br/>
+            <label>Valor 2 </label>
+            <input type="text" id="v2" value="0"/>
+            <br/><br/>
+            <label>Resultado </label>
+            <input type="text" id="res" value="0"/>
+            <br/><br/>
+            <button id="btn_somarjs">Somar JS</button>
+            <button id="btn_somarjq">Somar JQ</button>
+            
+        </div>
+
+        <script>
+           let btn_somarjs=document.getElementById("btn_somarjs").addEventListener("click",()=>{
+               let res=document.getElementById("res").value=parseInt(document.getElementById("v1").value)+parseInt(document.getElementById("v2").value)
+           })
+        </script>
+    </body>
+</html>
